@@ -65,7 +65,9 @@ yarn build
    DeliveryForm,
    Success
 ### Presenter 
-   Модуль index.ts
+   Модуль index.ts.
+
+   
    В приложении используется событийно-ориентированный подход. В качестве средства связи выступает EventEmitter.
 
 ## Базовый код
