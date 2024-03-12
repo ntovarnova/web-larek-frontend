@@ -51,23 +51,23 @@ yarn build
 
 Приложение реализовано по MVP архитектуре и состоит из компонентов:
 
-№ Компонент Описание Базовый класс Связанный класс
-1 Model Модель данных Model
-AppData
-Order
-CardItem
-2 View Модель отображения Component
-Page
-Modal
-Basket
-Card
-BasketItem
-Form
-ContactsForm
-DeliveryForm
-Success
-3 Presenter Модель связи - Реализуется в файле index.ts
-В приложении используется событийно-ориентированный подход. В качестве инструмента, который обеспечивает данных подход, выступает EventEmitter.
+Компонент Описание Базовый класс Связанный класс
+1. Model Модель данных Model
+   AppData
+   Order
+   CardItem
+2. View Модель отображения Component
+   Page
+   Modal
+   Basket
+   Card
+   BasketItem
+   Form
+   ContactsForm
+   DeliveryForm
+   Success
+3. Presenter Модель связи - Реализуется в файле index.ts
+   В приложении используется событийно-ориентированный подход. В качестве инструмента, который обеспечивает данных подход, выступает EventEmitter.
 
 Базовый код
 
