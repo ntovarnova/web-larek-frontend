@@ -55,6 +55,7 @@ yarn build
 1 Model Модель данных Model
 AppData
 Order
+CardItem
 2 View Модель отображения Component
 Page
 Modal
