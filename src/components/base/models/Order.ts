@@ -24,7 +24,6 @@ export class Order extends Model<IOrder> {
 		this.emitChanges(Events.VALIDATE_ORDER, this._formErrors);
 	}
 
-
 	clearOrder(): void {
 		this._payment = 'card';
 		this._address = '';
@@ -41,7 +40,6 @@ export class Order extends Model<IOrder> {
 		return this._payment;
 	}
 
-	
 	validatePayment(): void {
 		if (!this._payment) {
 			this._formErrors.payment = 'Необходимо выбрать способ оплаты';
@@ -59,7 +57,6 @@ export class Order extends Model<IOrder> {
 		return this._address;
 	}
 
-	
 	validateAddress(): void {
 		if (!this._address) {
 			this._formErrors.address = 'Необходимо ввести адрес доставки';
@@ -78,7 +75,6 @@ export class Order extends Model<IOrder> {
 		return this._email;
 	}
 
-	
 	validateEmail(): void {
 		if (!this._email) {
 			this._formErrors.email = 'Необходимо ввести почту';
@@ -114,7 +110,6 @@ export class Order extends Model<IOrder> {
 		return this._items;
 	}
 
-	
 	postOrder(): void {
 		this.clearOrder();
 		this.emitChanges(Events.PLACE_ORDER);

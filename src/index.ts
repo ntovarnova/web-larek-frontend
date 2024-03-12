@@ -106,7 +106,7 @@ events.on(Events.CHANGE_LOT_IN_BASKET, () => {
 	basket.items = appData.basket.map((item, index) => {
 		const card = new BasketItem(cloneTemplate(cardBasketTemplate), events, {
 			onClick: (event) => {
-				item.removeFromBasket(); 
+				item.removeFromBasket();
 				events.emit(Events.OPEN_BASKET);
 			},
 		});
@@ -155,7 +155,6 @@ events.on(Events.INPUT_ORDER_PHONE, (data: { value: string }) => {
 
 // Изменилось состояние валидации формы доставки
 events.on(Events.VALIDATE_ORDER, (errors: Partial<IFormErrors>) => {
-	
 	const { payment, address, email, phone } = errors;
 	deliveryForm.valid = !payment && !address;
 	contactsForm.valid = !email && !phone;
@@ -189,18 +188,15 @@ events.on(Events.FINISH_SECOND_ORDER_PART, () => {
 	const order = appData.order;
 
 	api
-		.orderLots(
-			
-			{
-				payment: order.payment,
-				address: order.address,
-				email: order.email,
-				phone: order.phone,
+		.orderLots({
+			payment: order.payment,
+			address: order.address,
+			email: order.email,
+			phone: order.phone,
 
-				total: appData.getTotalAmount(),
-				items: appData.getBasketIds(),
-			}
-		)
+			total: appData.getTotalAmount(),
+			items: appData.getBasketIds(),
+		})
 		.then((result) => {
 			const success = new Success(cloneTemplate(successTemplate), events, {
 				onClick: () => {
@@ -213,7 +209,7 @@ events.on(Events.FINISH_SECOND_ORDER_PART, () => {
 				}),
 			});
 
-			// Очищаем корзину 
+			// Очищаем корзину
 			appData.clearBasket();
 		})
 		.catch((err) => {

@@ -4,7 +4,7 @@ import { IEvents } from '../ base/Events';
 import { Form } from './Form';
 
 export interface IOrderDeliveryForm {
-	payment: IPaymentType; 
+	payment: IPaymentType;
 	address: string;
 }
 
@@ -15,7 +15,6 @@ export class DeliveryForm extends Form<IOrderDeliveryForm> {
 	constructor(container: HTMLFormElement, events: IEvents) {
 		super(container, events);
 
-
 		this._paymentContainer = ensureElement<HTMLDivElement>(
 			'.order__buttons',
 			this.container
@@ -24,7 +23,6 @@ export class DeliveryForm extends Form<IOrderDeliveryForm> {
 			this._paymentContainer.querySelectorAll('.button_alt')
 		);
 
-	
 		this._paymentContainer.addEventListener('click', (e: MouseEvent) => {
 			const target = e.target as HTMLButtonElement;
 			this.setClassPaymentMethod(target.name);
@@ -34,7 +32,6 @@ export class DeliveryForm extends Form<IOrderDeliveryForm> {
 
 	setClassPaymentMethod(className: string): void {
 		this._paymentButtons.forEach((btn) => {
-		
 			if (btn.name === className) {
 				this.toggleClass(btn, 'button_alt-active', true);
 			} else {

@@ -1,18 +1,14 @@
 import { IEvents } from '../ base/Events';
 import { Form } from './Form';
 
-
 export interface IOrderContactsForm {
-	email: string; 
-	phone: string; 
+	email: string;
+	phone: string;
 }
 
-
 export class ContactsForm extends Form<IOrderContactsForm> {
-	
 	constructor(container: HTMLFormElement, events: IEvents) {
 		super(container, events);
-
 	}
 
 	set phone(value: string) {
