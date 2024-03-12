@@ -1,7 +1,7 @@
 //import _ from 'lodash';
 import { Model } from '../ base/Model';
 import { ICardItem, IAppState, Events, IOrder } from '../../../types';
-import { IEvents } from '../ base/Events';
+import { IEvents } from '../ base/events';
 import { Order } from './Order';
 import { CardItem } from './CardItem';
 

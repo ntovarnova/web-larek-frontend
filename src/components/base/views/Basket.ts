@@ -4,7 +4,7 @@ import {
 	ensureElement,
 	formatSinaps,
 } from '../../../utils/utils';
-import { EventEmitter } from '../ base/Events';
+import { EventEmitter } from '../ base/events';
 import { Events } from '../../../types';
 
 interface IBasketView {

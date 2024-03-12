@@ -1,4 +1,4 @@
-import { ApiListResponse, Api } from './ base/Api';
+import { ApiListResponse, Api } from "./ base/api";
 import { ICardItem, IOrderAPI } from '../../types';
 
 export interface ILarekAPI {

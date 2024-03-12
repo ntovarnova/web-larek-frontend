@@ -1,5 +1,5 @@
 import { Component } from '../ base/Component';
-import { IEvents } from '../ base/Events';
+import { IEvents } from '../ base/events';
 import { ensureElement, formatNumber } from '../../../utils/utils';
 import { Events } from '../../../types';
 
