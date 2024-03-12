@@ -51,18 +51,18 @@ yarn build
 
 Приложение реализовано по архитектуре MVP (*M*odel/*V*iew/*P*resenter):
 ### Model
-   AppData
-   Order
-   CardItem
+   классы AppData,
+   Order,
+   CardItem,
 ### View
-   Page
-   Modal
-   Basket
-   Card
-   BasketItem
-   Form
-   ContactsForm
-   DeliveryForm
+   Классы Page,
+   Modal,
+   Basket,
+   Card,
+   BasketItem,
+   Form,
+   ContactsForm,
+   DeliveryForm,
    Success
 ### Presenter 
    Модуль index.ts
@@ -91,7 +91,7 @@ yarn build
    Класс данных отдельной карточки
 
 ### Order
-   Класс данных процесса оформления заказа. Содержит свойства, которые отображаются на полях соответствующих форм и реализует простейшую логику валидации свойств на наличие значений. Изменения в любом из свойств вызывают проверку всех полей и генерации события formErrors:changed
+   Класс данных процесса оформления заказа
 
 ## Компоненты представления
 
