@@ -1,9 +1,10 @@
-import { Component } from "../component";
+import { Component } from "../ base/Component";
 import { ensureElement,formatSinaps} from "../../../utils/utils";
-import{ IEvents} from "../ base/events";
+import{ IEvents} from "../ base/Events";
 import { CATEGOTY_MAP } from "../../../utils/constants";
 import { ILotCategory } from "../../../types";
-interface ICardActions {
+
+export interface ICardActions {
     onClick: (event: MouseEvent) => void;
 }
 
@@ -25,7 +26,7 @@ export class Card extends Component<ICard> {
     private _category: HTMLElement;
 
     constructor(protected blockName: string, container: HTMLElement, events: IEvents, actions?: ICardActions) {
-        super(container);
+        super(container, events);
 
         this._category = ensureElement<HTMLElement>(`.${blockName}__category`, container);
         this._image = ensureElement<HTMLImageElement>(`.${blockName}__image`, container);
@@ -75,7 +76,6 @@ export class Card extends Component<ICard> {
     }
     set price(value: number) {
 		this.setText(this._price, formatSinaps(value));
-		// TODO: стоит вынести в отдельное свойство
 		this.setDisabled(this._button, value == null);
 	}
 
