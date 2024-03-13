@@ -1,11 +1,11 @@
-import { Model } from '../ base/Model';
+import { Model } from '../base/Model';
 import {
 	ICardItem,
 	IFormErrors,
 	IPaymentType,
 	Events,
 	IOrder,
-} from '../../../types';
+} from '../../types';
 
 export class Order extends Model<IOrder> {
 	protected _payment: IPaymentType = 'card';

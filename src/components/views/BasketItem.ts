@@ -1,7 +1,7 @@
-import { ensureElement, formatSinaps } from '../../../utils/utils';
-import { IEvents } from '../ base/events';
+import { ensureElement, formatSinaps } from '../../utils/utils';
+import { IEvents } from '../base/events';
 import { ICardActions } from './Card';
-import { Component } from '../ base/Component';
+import { Component } from '../base/Component';
 
 interface IBasketCard {
 	index: number;

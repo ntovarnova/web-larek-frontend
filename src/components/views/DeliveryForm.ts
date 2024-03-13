@@ -1,7 +1,7 @@
-import { Events, IPaymentType } from '../../../types';
-import { ensureElement } from '../../../utils/utils';
+import { Events, IPaymentType } from '../../types';
+import { ensureElement } from '../../utils/utils';
 import { Form } from './Form';
-import { IEvents } from '../ base/events';
+import { IEvents } from '../base/events';
 
 export interface IOrderDeliveryForm {
 	payment: IPaymentType;

@@ -1,5 +1,5 @@
-import { ApiListResponse, Api } from "./ base/api";
-import { ICardItem, IOrderAPI } from '../../types';
+import { ApiListResponse, Api } from "./base/api";
+import { ICardItem, IOrderAPI } from '../types';
 
 export interface ILarekAPI {
 	getLotItem: (id: string) => Promise<ICardItem>;

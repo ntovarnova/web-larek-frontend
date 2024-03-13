@@ -1,5 +1,5 @@
-import { Events, ILotCategory, ICardItem } from '../../../types';
-import { Model } from '../ base/Model';
+import { Events, ILotCategory, ICardItem } from '../../types';
+import { Model } from '../base/Model';
 
 export class CardItem extends Model<ICardItem> {
 	description: string;

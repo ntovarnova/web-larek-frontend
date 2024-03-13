@@ -1,14 +1,14 @@
 import './scss/styles.scss';
-import { LarekAPI } from './components/base/LarekApi';
-import { AppState } from './components/base/models/AppData';
+import { LarekAPI } from './components/LarekApi';
+import { AppState } from './components/models/AppData';
 import { CDN_URL, API_URL } from './utils/constants';
 import { cloneTemplate, ensureElement } from './utils/utils';
-import { EventEmitter } from './components/base/ base/events';
-import { Card } from './components/base/views/Card';
-import { Modal } from './components/base/views/Modal';
-import { Page } from './components/base/views/Page';
-import { Basket } from './components/base/views/Basket';
-import { Success } from './components/base/views/Succes';
+import { EventEmitter } from './components/base/events';
+import { Card } from './components/views/Card';
+import { Modal } from './components/views/Modal';
+import { Page } from './components/views/Page';
+import { Basket } from './components/views/Basket';
+import { Success } from './components/views/Succes';
 import {
 	ICardItem,
 	Events,
@@ -16,9 +16,9 @@ import {
 	IPaymentType,
 	CatalogChangeEvent,
 } from './types';
-import { BasketItem } from './components/base/views/BasketItem';
-import { DeliveryForm } from './components/base/views/DeliveryForm';
-import { ContactsForm } from './components/base/views/ContactsForm';
+import { BasketItem } from './components/views/BasketItem';
+import { DeliveryForm } from './components/views/DeliveryForm';
+import { ContactsForm } from './components/views/ContactsForm';
 
 const events = new EventEmitter();
 const api = new LarekAPI(CDN_URL, API_URL);

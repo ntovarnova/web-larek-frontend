@@ -9,5 +9,5 @@
     "moduleResolution": "node",
     // "strictNullChecks": true
   },
-  //"include": ["src/index.ts", "src/types/*.d.ts"]
+  "include": ["src/index.ts", "src/types/*.d.ts"]
 }

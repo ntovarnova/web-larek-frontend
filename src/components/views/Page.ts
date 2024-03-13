@@ -1,7 +1,7 @@
-import { Component } from '../ base/Component';
-import { IEvents } from '../ base/events';
-import { ensureElement, formatNumber } from '../../../utils/utils';
-import { Events } from '../../../types';
+import { Component } from '../base/Component';
+import { IEvents } from '../base/events';
+import { ensureElement, formatNumber } from '../../utils/utils';
+import { Events } from '../../types';
 
 interface IPage {
 	counter: number;

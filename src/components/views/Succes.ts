@@ -1,6 +1,6 @@
-import { Component } from '../ base/Component';
-import { IEvents } from '../ base/events';
-import { ensureElement, formatSinaps } from '../../../utils/utils';
+import { Component } from '../base/Component';
+import { IEvents } from '../base/events';
+import { ensureElement, formatSinaps } from '../../utils/utils';
 
 interface ISuccess {
 	total: number;

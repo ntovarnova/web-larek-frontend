@@ -1,11 +1,11 @@
-import { Component } from '../ base/Component';
+import { Component } from '../base/Component';
 import {
 	createElement,
 	ensureElement,
 	formatSinaps,
-} from '../../../utils/utils';
-import { EventEmitter } from '../ base/events';
-import { Events } from '../../../types';
+} from '../../utils/utils';
+import { EventEmitter } from '../base/events';
+import { Events } from '../../types';
 
 interface IBasketView {
 	items: HTMLElement[];

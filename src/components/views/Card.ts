@@ -1,8 +1,8 @@
-import { Component } from '../ base/Component';
-import { ensureElement, formatSinaps } from '../../../utils/utils';
-import { IEvents } from '../ base/events';
-import { CATEGOTY_MAP } from '../../../utils/constants';
-import { ILotCategory } from '../../../types';
+import { Component } from '../base/Component';
+import { ensureElement, formatSinaps } from '../../utils/utils';
+import { IEvents } from '../base/events';
+import { CATEGOTY_MAP } from '../../utils/constants';
+import { ILotCategory } from '../../types';
 
 export interface ICardActions {
 	onClick: (event: MouseEvent) => void;

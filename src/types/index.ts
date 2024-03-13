@@ -1,5 +1,5 @@
-import { IOrderDeliveryForm } from '../components/base/views/DeliveryForm';
-import { IOrderContactsForm } from '../components/base/views/ContactsForm';
+import { IOrderDeliveryForm } from '../components/views/DeliveryForm';
+import { IOrderContactsForm } from '../components/views/ContactsForm';
 
 export type ILotCategory =
 	| 'софт-скил'
