@@ -123,3 +123,6 @@ yarn build
 
  ### Success
 Класс представления, определяющий отображение основной информации об оформленном заказе
+
+## Cсылка на проект на github
+https://github.com/ntovarnova/web-larek-frontend
