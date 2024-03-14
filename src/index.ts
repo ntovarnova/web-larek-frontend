@@ -3,7 +3,7 @@ import { LarekAPI } from './components/LarekApi';
 import { AppState } from './components/models/AppData';
 import { CDN_URL, API_URL } from './utils/constants';
 import { cloneTemplate, ensureElement } from './utils/utils';
-import { EventEmitter } from './components/base/events';
+import { EventEmitter } from './components/base/Events';
 import { Card } from './components/views/Card';
 import { Modal } from './components/views/Modal';
 import { Page } from './components/views/Page';

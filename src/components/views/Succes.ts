@@ -1,5 +1,5 @@
 import { Component } from '../base/Component';
-import { IEvents } from '../base/events';
+import { IEvents } from '../base/Events';
 import { ensureElement, formatSinaps } from '../../utils/utils';
 
 interface ISuccess {
@@ -36,6 +36,6 @@ export class Success extends Component<ISuccess> {
 	}
 
 	set total(value: number) {
-		this._total.textContent = `Списано ${formatSinaps(value)}`;
+		this.setText(this._total, `Списано ${formatSinaps(value)}`);
 	}
 }

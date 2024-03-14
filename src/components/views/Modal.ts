@@ -1,6 +1,6 @@
 import { Component } from '../base/Component';
 import { ensureElement } from '../../utils/utils';
-import { IEvents } from '../base/events';
+import { IEvents } from '../base/Events';
 import { Events } from '../../types';
 
 interface IModalData {
@@ -23,7 +23,6 @@ export class Modal extends Component<IModalData> {
 		[this._closeButton, this.container].forEach((element) => {
 			element.addEventListener('click', () => {
 				this.close();
-				this.events.emit(Events.CLOSE_MODAL);
 			});
 		});
 		this._content.addEventListener('click', (event) => event.stopPropagation());
